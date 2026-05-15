@@ -379,6 +379,85 @@
         .code-demo .comment {
             color: #808080;
         }
+        /* Social Media */
+        .social-media {
+            background: white;
+            border-radius: 24px;
+            padding: 40px 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .social-media h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .social-media-subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 30px;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            min-width: 150px;
+        }
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .social-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .social-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .social-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .social-link.weibo {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+        }
+        .social-link.weibo .social-name,
+        .social-link.weibo .social-desc {
+            color: white;
+        }
+        .social-link.xiaohongshu {
+            background: linear-gradient(135deg, #fe2c55, #ff6b6b);
+            color: white;
+        }
+        .social-link.xiaohongshu .social-name,
+        .social-link.xiaohongshu .social-desc {
+            color: white;
+        }
+        .social-link.xianyu {
+            background: linear-gradient(135deg, #ff9500, #ff6b00);
+            color: white;
+        }
+        .social-link.xianyu .social-name,
+        .social-link.xianyu .social-desc {
+            color: white;
+        }
+        .social-note {
+            margin-top: 20px;
+            color: #888;
+            font-size: 0.9rem;
+        }
         /* CTA */
         .cta {
             text-align: center;
@@ -661,6 +740,30 @@ response = requests.post(<span class="string">"https://api.coze.cn/v3/chat"</spa
 <span class="keyword">print</span>(response.json())</code></pre>
         </section>
 
+        <!-- Social Media -->
+        <section class="social-media">
+            <h2>📱 关注我们，获取更多资讯</h2>
+            <p class="social-media-subtitle">多渠道关注矩阵，总有一款适合你</p>
+            <div class="social-links">
+                <a href="https://weibo.com/6508206834/6299010593096151" target="_blank" class="social-link weibo">
+                    <span class="social-icon">📣</span>
+                    <span class="social-name">微博</span>
+                    <span class="social-desc">获取最新动态</span>
+                </a>
+                <a href="http://xhslink.com/o9JF5ASJ4UT8" target="_blank" class="social-link xiaohongshu">
+                    <span class="social-icon">📕</span>
+                    <span class="social-name">小红书</span>
+                    <span class="social-desc">笔记教程分享</span>
+                </a>
+                <a href="https://s.taobao.com/search?q=AI%E6%99%BA%E8%83%BD%E4%BD%93%E8%90%A5%E9%94%80%E5%8A%A9%E6%89%8B%E6%9C%88%E5%8D%A1" target="_blank" class="social-link xianyu">
+                    <span class="social-icon">🔍</span>
+                    <span class="social-name">闲鱼</span>
+                    <span class="social-desc">搜索"AI智能体营销助手月卡"</span>
+                </a>
+            </div>
+            <p class="social-note">💡 闲鱼链接有时效性，如无法搜索到可联系客服获取最新链接</p>
+        </section>
+
         <!-- CTA -->
         <section class="cta">
             <h2>🎯 立即开始你的智能营销之旅</h2>
@@ -677,7 +780,9 @@ response = requests.post(<span class="string">"https://api.coze.cn/v3/chat"</spa
             <p style="margin-top: 10px;">
                 <a href="https://www.coze.cn/skills" target="_blank">扣子技能商店</a> · 
                 <a href="https://afdian.com/a/fly-ai-agent" target="_blank">爱发电</a> · 
-                <a href="#">使用文档</a> · 
+                <a href="https://weibo.com/6508206834/6299010593096151" target="_blank">微博</a> · 
+                <a href="http://xhslink.com/o9JF5ASJ4UT8" target="_blank">小红书</a> · 
+                <a href="https://s.taobao.com/search?q=AI%E6%99%BA%E8%83%BD%E4%BD%93%E8%90%A5%E9%94%80%E5%8A%A9%E6%89%8B%E6%9C%88%E5%8D%A1" target="_blank">闲鱼</a> · 
                 <a href="#">联系客服</a>
             </p>
         </footer>
